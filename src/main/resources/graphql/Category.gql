@@ -1,0 +1,18 @@
+type Category {
+    name: ID!
+    color: Color
+}
+
+enum Color {
+    RED
+    GREEN
+    BLUE
+}
+
+type Query {
+    categories: [Category]
+}
+
+type Mutation {
+    createCategory: Category
+}
